@@ -1,0 +1,29 @@
+<div *ngIf="user">
+
+  <div class="card mb-5" *ngIf="user">
+    <div class="card-body">
+      <h5 class="card-title">Author</h5>
+      <p class="card-text">
+        {{ user.name }} <br />
+        <em>{{ user.email }}</em> <br />
+        <em>{{ user.phone }}</em> <br />
+        <em>{{ user.website }}</em> <br />
+      </p>
+      <p class="card-text">
+        {{ user.address.suite }}, {{ user.address.street }} <br />
+        {{ user.address.city }} - {{ user.address.zipcode }}
+      </p>
+      <p class="card-text">
+          <strong>Location: </strong>
+          {{ user.address.geo.lat }}, {{ user.address.geo.lng }}
+      </p>
+      <p class="card-text">
+        <strong>Company: </strong>
+        {{ user.company.name }} <br />
+        <em>{{ user.company.catchPhrase }}</em> <br />
+        <em>{{ user.company.bs }}</em>
+      </p>
+    </div>
+  </div>
+ 
+</div>
