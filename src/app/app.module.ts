@@ -11,13 +11,15 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { UserService } from './services/user.service';
 import { CommentService } from './services/comment.service';
 import { UserComponent } from './user/user.component';
+import { PostFilterPipe } from './postfilter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     PostDetailComponent,
-    UserComponent
+    UserComponent,
+    PostFilterPipe
   ],
   imports: [
     BrowserModule,
