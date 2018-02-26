@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Post } from './model/Post';
+import { Post } from '../model/Post';
 
 @Pipe({
     name: 'postFilter'
